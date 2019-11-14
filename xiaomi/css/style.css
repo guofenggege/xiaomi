@@ -1,0 +1,358 @@
+body, ul, li {
+	margin:0px;
+	padding:0px;
+}
+body{
+	height:2500px;
+	font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,
+	"Microsoft Yahei","Hiragino Sans GB","Heiti SC",
+	"WenQuanYi Micro Hei",sans-serif;
+}
+ul{
+	list-style-type:none;
+}
+a{
+	text-decoration: none;
+}
+.topber{
+	background-color: #333;
+	height:40px;
+}
+.container{
+	/*border:1px solid black;*/
+	margin:0 auto;
+	width:1226px;
+}
+.container::before, .container::after, .clearfix::before, .clearfix::after{
+	content:"";
+	display:table;
+}
+.container::after, .clearfix::after{
+	clear:both;
+}
+.topber-nav{
+	float:left;
+	height:40px;
+	line-height:40px;
+	font-size:0px;
+}
+.topber-nav span{
+	font-size:12px;
+	color:#424242;
+	font-family: sans-serif;
+	margin:0.5em;
+}
+.topber-info , .topber-cart{
+	float:right;
+}
+.topber a{
+	color:#b0b0b0;
+	font-size:12px;
+}
+.topber a:hover{
+	color:#fff;
+}
+/*购物车*/
+.topber-cart a{
+	display:block;
+	height:40px;
+	line-height:40px;
+	text-align: center;
+	width:120px;
+	background-color: #424242;
+}
+.topber-cart a:hover{
+	background-color: #fff;
+	color:#ff6700;
+}
+.topber-cart span{
+	margin-left:4px;
+	font-size:12px;
+}
+/*登录注册等*/
+.topber-info{
+	margin-right:15px;
+}
+.topber-info a{
+	float:left;
+	padding:0 5px;
+	line-height:40px;
+	height:40px;
+}
+.topber-info span{
+	float:left;
+	font-family: sans-serif;
+	font-size:12px;
+	color:#424242;
+	line-height: 40px;
+	height: 40px;
+}
+.topber-info .sep{
+	padding:0 10px;
+}
+
+/*页头部分*/
+
+/*LOGO部分*/
+.header {
+	height:100px;
+}
+
+.header-log{
+	float:left;
+	width:62px;
+	height:55px;
+	margin-top:22px;
+	/*border:1px solid black;*/
+}
+.header-log a {
+	display:block;
+	height:55px;
+	width:55px;
+	background-color:#ff6700 url(../img/log.jpg) no-repeat 50% 50%;
+}
+.header-log a.lr{
+	text-align:left;
+	text-indent:-2111em;
+}
+/*中间列表部分*/
+.header-nav{
+	float:left;
+	width:820px;
+/*	border:1px solid black;*/
+	height:100px;
+}
+.header-nav .nav-list{
+	width:820px;
+	height:88px;
+	font-size:16px;
+	padding:12px 0 0 30px;
+}
+
+.header .nav-list .nav-category{
+	float:left;	
+	width:127px;
+	padding: 0 15px 0 0 ;
+}
+.header-nav .nav-list .nav-category a{
+	display: block;
+	padding:26px 0 38px;
+	text-align:right;
+	color:#333;
+}
+.header-nav .nav-list .nav-item{
+	float:left;
+}
+.header .nav-list .nav-item a{
+	display:block;
+	padding:26px 10px 38px;
+	color:#333;
+}
+.header .nav-list .nav-item a:hover{
+	color:#ff6700;
+}
+
+/*搜索部分*/
+.header-search{
+	float:right;
+	width:296px;
+	/*border:1px solid black;*/
+	height:50px;
+	margin-top:25px;
+}
+.header-search .search-form{
+	position:relative;
+	display:block;
+	width:296px;
+	height:50px;
+}
+.header-search .search-form .search-text{
+	position:absolute;
+	top:0;
+	right:51px;
+	display:block;
+	width:245px;
+	height:50px;
+	line-height:50px;
+	border:1px solid #e0e0e0;
+	outline:0;
+}
+.header-search .search-form .search-btn{
+	position: absolute;
+	top:0;
+	right:0;
+	display:block;
+	width:52px;
+	height:50px;
+	border:1px solid #e0e0e0;
+	font-size:24px;
+	line-height:24px;
+	background-color: #fff;
+	color:#616161;
+	outline: 0;
+}
+.header-search .search-form .search-btn:hover{
+	background-color: #ff6700;
+	color:#fff;
+}
+.seckill{
+	background-color: #f5f5f5;
+}
+.seckill-head{
+	height:170px;
+	margin-top:19px;
+	background:url(../img/seckill-head.jpg) no-repeat;
+}
+/*sechill-nav*//*选项卡开始*/
+.seckill-nav{
+	margin:-68px 0 22px;
+}
+.seckill-navfixed{
+	position:fixed;
+	top:60px;
+}
+/*.seckill-navfixed{
+	position:fixed;
+	top:60px;
+}
+*/.seckill-nav ul {
+	height:68px;
+	background-color: #414141;
+}
+.seckill-nav li{
+	display: block;
+	float:left;
+	color:#fff;
+	width:245.2px;
+	height:69px;
+	line-height: 68px;
+	text-align:center;
+	cursor:pointer;
+}
+.seckill-nav li em{
+	display: inline-block;
+	font-style: normal;
+	margin-left:30px;
+	font-size:18px;
+	line-height: 1;
+	vertical-align: middle;
+}
+.seckill-nav li span{
+	display:inline-block;
+	margin-left:15px;
+	text-align:left;
+	line-height: 1;
+	vertical-align: middle;
+	font-size:14px;
+}
+.seckill-nav .active{
+	background-color: #f1393a;
+}
+.seckill-nav ul li span em {
+	display:inline-block;
+	font-size: 14px;
+	margin-left: 0;
+	font-style: normal;
+	text-align: left;
+	line-height: 20px;
+}
+/*选项卡结束*/
+/*商品列表*/
+.seckill-goods .active{
+	display: block;
+}
+.seckill-goods ul{
+	margin-right: -13px;
+	/*隐藏一部分*/
+	display:none;
+
+}
+.seckill-goods li {
+	float:left;
+	width:400px;
+	height:190px;
+	background-color:white;
+	/*border:1px solid black;*/
+	margin-right:13px;
+	margin-bottom: 13px;
+
+}
+/*商品信息*/
+.seckill-goods .bg{
+	float:left;
+	width:190px;
+	height:190px;
+	/*border:1px solid red;*/
+}
+.seckill-goods .info{
+	width:190px;
+	height:190px;
+	/*border:1px solid green;*/
+	margin-left:210px;
+	padding-top: 30px;
+}
+.seckill-goods .info .name{
+	font-size:16px;
+	color:#333;
+	height:16px;
+	line-height: 16px;
+	/*超出部分变为...*/
+	display:block;
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+/*p标签解释*/
+.seckill-goods .info .tips{
+	font-size:12px;
+	line-height: 12px;
+	color:#b0b0b0;
+	margin-top: 10px;
+}
+/*价格*/
+.seckill-goods .info .price{
+	font-size: 16px;
+	line-height: 16px;
+	color:#f1393a;
+	margin-top:14px;
+	margin-bottom: 0px;
+}
+/*删除价格*/
+.seckill-goods .info .price del{
+	color:#999;
+	font-size:12px;
+	line-height: 12px;
+	margin-left: 10px;
+}
+/*按钮*/
+.seckill-goods .info .btn{
+	display:inline-block;
+	width:118px;
+	height:28px;
+	font-size: 14px;
+	color:#fff;
+	line-height: 28px;
+	text-align: center;
+	background-color: #f1393a;
+	margin-top: 19px;
+	border:1px solid #f1393a;
+}
+/*多少人提醒*/
+.seckill-goods .info .person{
+	font-size: 12px;
+	line-height: 12px;
+	color:#999;
+	margin-top:10px;
+}
+
+.seckill-goods .bg img{
+	height:190px;
+}
+
+/*提示*/
+.seckill-notice{
+	font-size: 12px;
+	color:#999;
+	margin-top:100px;
+	padding-bottom:35px;
+}
